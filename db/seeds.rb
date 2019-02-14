@@ -12,24 +12,31 @@ Product.destroy_all
 
 10.times do
   Product.create(
-    name: Faker::Beer.unique.name
+    name: Faker::Beer.unique.name,
+    images: "http://lorempixel.com/320/240/food"
   )
 end
 
 10.times do
   Product.create(
-    name: Faker::Coffee.unique.blend_name
+    name: Faker::Coffee.unique.blend_name,
+    images: "http://lorempixel.com/320/240/food"
+
   )
 end
 
 10.times do
   Product.create(
-    name: Faker::Food.unique.fruits
+    name: Faker::Food.unique.fruits,
+    images: "http://lorempixel.com/320/240/food"
+
   )
 end
 
 10.times do
   Product.create(
-    name: Faker::Food.unique.dish
+    name: Faker::Food.unique.dish,
+    images: "http://lorempixel.com/320/240/food"
+
   )
 end
